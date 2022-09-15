@@ -1,0 +1,488 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #111111;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.logo {
+  width: 100px;
+}
+nav .fa-bars {
+  display: none;
+}
+.list-item {
+  list-style: none;
+  font-size: 0.9rem;
+}
+.list {
+  display: flex;
+  gap: 2rem;
+}
+nav {
+  margin: 2rem 3rem 0 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Hero Section */
+.hero-section {
+  width: 100vw;
+  margin: 4rem;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero {
+  display: grid;
+  place-items: center;
+  width: 40vw;
+}
+.hero img {
+  object-fit: cover;
+  object-position: -100px -40px;
+  width: 700px;
+  height: 700px;
+}
+
+.hero-content {
+  position: relative;
+  top: -50px;
+  width: 60vw;
+  margin: 0 3rem 0 0;
+}
+.hero-content h4 {
+  font-size: 1.3rem;
+  color: #ff3343;
+}
+.hero-content h2 {
+  font-size: 3.5rem;
+}
+.hero-content p {
+  width: 80%;
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+.btn {
+  background-color: rgba(255, 51, 67, 0.9);
+  color: #fff;
+  border: 0;
+  padding: 0.8rem 1.6rem;
+  font-size: 1rem;
+}
+
+/* Card Section */
+
+.cards {
+  margin-bottom: 3rem;
+  height: 110vh;
+}
+.gray-bgc {
+  background-color: #181818;
+  position: absolute;
+  width: 50%;
+  margin-top: -3.6rem;
+  height: 110%;
+  z-index: -999;
+}
+.card img {
+  object-fit: cover;
+  width: 50px;
+}
+.card-row-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 6rem;
+  margin-top: -3rem;
+}
+.card-row-1 .card {
+  flex-basis: 260px;
+  height: 280px;
+  background-color: #1e1e1e;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.card .card-des {
+  font-size: 0.9rem;
+}
+.card .know-more {
+  color: #ff3343;
+}
+.card-row-1 .card-red {
+  background-color: rgba(255, 51, 67, 0.9);
+}
+.card-row-1 .card-red .know-more-white {
+  color: #fff;
+}
+
+.card-row-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 6rem 0 9rem;
+}
+.exp {
+  display: grid;
+  margin-top: 5rem;
+  place-items: center;
+  gap: 1rem;
+}
+.exp h1 {
+  font-size: 6.6rem;
+  font-weight: 900;
+  color: rgba(255, 51, 67, 0.9);
+}
+.exp p {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.highlights {
+  width: 55%;
+}
+.highlight-row-1,
+.highlight-row-2 {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 1rem;
+}
+.highlight-card {
+  background-color: #1e1e1e;
+  width: 280px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.highlight-card h2 {
+  color: rgba(255, 51, 67, 0.9);
+  font-size: 2.8rem;
+}
+.highlight-card p {
+  font-size: 1.2rem;
+}
+
+/* Project Section */
+.projects {
+  margin: 4rem 2rem;
+}
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.head-line h3 {
+  font-size: 1.1rem;
+}
+.head-line p {
+  font-size: 0.8rem;
+}
+.bgc {
+  background-color: #181818;
+  padding: 2rem 4rem 2rem 2rem;
+  margin-bottom: 2rem;
+}
+.bgc img {
+  object-fit: cover;
+  width: 550px;
+}
+.project-row-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.project-row-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.project-cards .h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.project-cards p {
+  font-size: 0.8rem;
+  color: #ff3343;
+}
+
+/* Content Section */
+.contact {
+  height: 50vh;
+  margin: 6rem 5rem;
+  background-color: #181818;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 3rem;
+}
+.contact-content h2 {
+  font-size: 2.6rem;
+  margin-bottom: 1.2rem;
+}
+.contact-content p {
+  color: #ccc;
+  width: 80%;
+}
+
+/* FooterNav */
+.footer-nav {
+  margin-bottom: 2rem;
+}
+.footer-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.footer-item {
+  list-style: none;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+/* Footer Socials */
+
+.footer-socials {
+  background-color: #181818;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  gap: 35%;
+}
+.footer-socials .logo {
+  margin-left: 5rem;
+}
+.socials {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    height: 10vh;
+  }
+  nav .list {
+    display: none;
+  }
+  nav .fa-bars {
+    display: block;
+  }
+  .hero-content .btn {
+    margin-top: 0.5rem;
+  }
+  .hero {
+    display: grid;
+    place-items: center;
+    width: 100%;
+  }
+  .hero img {
+    width: 100%;
+    height: 350px;
+    object-position: -50px -40px;
+  }
+  .hero-section {
+    margin-top: -1.6rem;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+    height: 90vh;
+  }
+
+  .hero-content h2 {
+    font-size: 2.4rem;
+  }
+  .hero-content p {
+    display: none;
+  }
+
+  .cards {
+    height: 100%;
+  }
+
+  .gray-bgc {
+    /* margin-top: -20rem; */
+    height: 150%;
+  }
+
+  .card-row-1 {
+    flex-direction: column;
+    gap: 1.5rem;
+    /* margin-bottom: 3rem; */
+  }
+
+  .card-row-1 .card {
+    width: 260px;
+    height: 280px;
+    background-color: #1e1e1e;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  .card-row-1 .card-red {
+    background-color: rgba(255, 51, 67, 0.9);
+  }
+
+  .card-row-2 {
+    flex-direction: column;
+    margin: 0 6rem;
+  }
+  .exp {
+    display: grid;
+    place-items: center;
+    /* gap: 1rem; */
+    margin-bottom: 2rem;
+  }
+  .exp h1 {
+    font-size: 6.6rem;
+    font-weight: 900;
+    color: rgba(255, 51, 67, 0.9);
+  }
+  .exp p {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .highlights {
+    width: 100%;
+  }
+
+  .highlight-row-1,
+  .highlight-row-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .highlight-card {
+    background-color: #1e1e1e;
+    width: 80vw;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .highlight-card h2 {
+    color: rgba(255, 51, 67, 0.9);
+    font-size: 2.2rem;
+  }
+  .highlight-card p {
+    font-size: 1rem;
+  }
+  .heading {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .head-line p {
+    display: none;
+  }
+
+  .bgc {
+    background-color: #181818;
+    padding: 2rem;
+    margin-bottom: 1rem;
+  }
+  .bgc img {
+    object-fit: cover;
+    width: 300px;
+  }
+  .project-cards {
+    margin-bottom: 2rem;
+  }
+  .project-row-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+  .project-row-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .project-cards .h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .project-cards p {
+    font-size: 0.8rem;
+    color: #ff3343;
+  }
+
+  .contact {
+    height: 30vh;
+    margin: 3rem;
+    background-color: #181818;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+  }
+  .contact-content h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+  }
+  .contact-content p {
+    display: none;
+  }
+
+  .footer-socials {
+    background-color: #181818;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3rem;
+  }
+  .footer-socials .logo {
+    margin-left: 0;
+  }
+  .socials {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .contact {
+    text-align: center;
+    height: 30vh;
+    margin: 3rem;
+    background-color: #181818;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    padding: 2rem;
+  }
+  .contact-content h2 {
+    font-size: 1.1rem;
+  }
+}
